@@ -1,5 +1,5 @@
 <script>
-	import '../app.css';
+	import '../app.postcss';
 	import NavBar from '../lib/NavBar.svelte';
 
 	// import for experiment only
@@ -17,4 +17,3 @@
 <!-- <Nav />
 <Nav2 /> -->
 <!-- <Nav3 /> -->
-

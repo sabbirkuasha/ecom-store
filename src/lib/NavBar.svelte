@@ -77,7 +77,7 @@
                           Shirt
                         </a>
                         <!-- dropdown Men sub-menu-->
-                        <div class="lg:absolute bg-slate-800 w-52 rounded-md hidden group-hover:block top-0 ml-52">
+                        <div class="lg:absolute bg-slate-800 w-52 rounded-md hidden group-hover:hidden top-0 ml-52">
                           <ul class="flex flex-col space-y-2">
                             <li class="">
                               <a  class="flex w-full pl-4 p-2 rounded-md
@@ -167,7 +167,7 @@
           </div>
           <div class="">
             <!-- profile -->
-            <div class="dropdown dropdown-end w-8">
+            <div class="dropdown dropdown-end w-8 lg:w-10">
               <label for="some" tabindex="0" class="btn btn-ghost btn-circle avatar border">
                 <div class="rounded-full w-6 ring-2 ring-purple-400 border">
                   <img src="https://placeimg.com/80/80/people" alt="some"/>
@@ -190,7 +190,7 @@
     </div>
 </div>
 
-<div class="w-full h-full lg:hidden md:flex bg-slate-900" x-data={navbarOpen}>
+<div class="w-full h-full hidden lg:hidden md:hidden bg-slate-900" x-data={navbarOpen}>
   <ul class="flex flex-col lg:space-x-0">
     <li class="">
         <a  class="flex py-3 px-3 rounded-md text-white border-red-700 md:w-screen
