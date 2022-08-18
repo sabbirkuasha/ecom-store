@@ -2,7 +2,7 @@
   let navbarOpen = false
 </script>
 
-<div class="navbar shadow bg-slate-900">
+<div class="navbar shadow-xl bg-slate-900 z-50">
     <!-- Left Menu - Desktop (Hidden in Phone) -->
     <div class="navbar-start hidden lg:flex">
         <div class="lg:flex">
@@ -11,7 +11,7 @@
                     <a  class="flex py-3 px-3 rounded-md text-white border-red-700
                              hover:bg-slate-800 focus:outline active:bg-violet-700
                              border-b-2" 
-                        href="/">
+                        href="/Women">
                         Women
                     </a>
                     <!-- dropdown Women-->
@@ -48,6 +48,13 @@
                                   hover:bg-slate-800"
                               href="/">
                             Tops
+                          </a>
+                        </li>
+                        <li class="">
+                          <a  class="flex w-full pl-4 p-2 rounded-md
+                                  hover:bg-slate-800 focus:outline"
+                              href="/Women/Salwar-Kameez">
+                            Salwar Kameez
                           </a>
                         </li>
                       </ul>
