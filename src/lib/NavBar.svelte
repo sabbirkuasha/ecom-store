@@ -2,7 +2,7 @@
   let navbarOpen = false
 </script>
 
-<div class="navbar shadow-xl bg-slate-900 z-50">
+<div class="navbar sticky top-0 shadow-xl bg-slate-900 z-50">
     <!-- Left Menu - Desktop (Hidden in Phone) -->
     <div class="navbar-start hidden lg:flex">
         <div class="lg:flex">
