@@ -5,9 +5,10 @@
 
 <CategoryBar categoryName = "SALWAR KAMEEJ"/>
 
-<div class="w-full flex flex-row bg-white justify-between shadow-xl">
+<div class="w-full flex flex-row bg-white justify-between shadow-xl ring-1">
+    <!--left - breadcrumb -->
     <div class="text-black flex-grow p-2">
-        <div class="text-sm breadcrumbs">
+        <div class="text-sm breadcrumbs hidden lg:inline-flex">
             <ul>
                 <li><a href="/">Home</a></li> 
                 <li><a href="/">Women</a></li> 
@@ -30,9 +31,9 @@
             <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
         </label>
         </label>
-
     </div>
-    <div class="text-black p-2 w-2/4 m-auto">
+    <!-- middle  Sub category -->
+    <div class="text-black p-2 md:w-2/4 sm:w-auto m-auto border hidden">
         <ul class="flex flex-row flex-grow justify-center">
             <li><a class="font-bold text-red-700" href="/">Cotton</a></li>
             <li class="px-2">|</li>
@@ -47,7 +48,8 @@
             <li><a href="/">Benarsee</a></li>
         </ul>
     </div>
-    <div class="text-black p-2 w-1/4 text-right flex justify-end space-x-7">
+    <!-- right - filters -->
+    <div class="text-black p-2 w-1/4 text-right hidden md:flex justify-end space-x-7">
         <div class="flex flex-row">
            <span class="m-auto"> Filters </span>
            <span class="m-auto">
@@ -68,7 +70,16 @@
     </div>
 </div>
 
-<div class="p-2 h-full w-auto flex flex-row space-x-5 justify-center bg-white">
+<div class="p-4 bg-white ring-2 
+            grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+    <SingleProduct  product ="Chuniya"
+                    price =542/>
+    <SingleProduct  product ="Shapla"
+                    price =315/>
+    <SingleProduct  product ="Shapla"
+                    price =315/>
+    <SingleProduct  product ="Shapla"
+                    price =315/>
     <SingleProduct  product ="Chuniya"
                     price =542/>
     <SingleProduct  product ="Shapla"

@@ -2,7 +2,8 @@
     <div class="text-center">
         Landing Page content
     </div>
-
+    
+<ul>
     <li class="">
         <a  class="flex w-full pl-4 p-2 rounded-md
                 hover:bg-slate-800 focus:outline"
@@ -10,4 +11,6 @@
           Salwar Kameez
         </a>
     </li>
+</ul>
+    
 </main>
