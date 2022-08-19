@@ -1,9 +1,19 @@
 <script>
     export let product ="product"
     export let price = 542
-    export let img = "https://placeimg.com/432/540/people"
+    let curImg = ""
+    export let img = "https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-3.jpg"
+    export const img2 = "https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-1.jpg"
+
+    curImg = img
+    let mouseEnterF = ()=>{
+        curImg = img2
+    }
+    let mouseLeaveF = ()=>{
+        curImg = img
+    }
 </script>
-<div class="card w-auto shadow-xl rounded-sm">
+<div class="card w-auto shadow-md rounded-md">
     <figure class="">
 
         <!-- only on this when New badge is switched off -->
@@ -11,9 +21,7 @@
             <span class="m-auto text-white text-center">NEW</span> 
         </div> -->
        
-        <img class="w-auto h-auto" src={img} alt="Shoes" />
-        
-        
+        <img class="w-auto h-auto" src={curImg} alt="Shoes" />
     </figure>
     <div class=" ml-2 mt-2 rounded-xl">
         <!-- only on this when New Overlay box is switched off -->
