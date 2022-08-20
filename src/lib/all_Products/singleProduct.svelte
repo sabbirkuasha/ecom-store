@@ -21,7 +21,7 @@
             <span class="m-auto text-white text-center">NEW</span> 
         </div> -->
        
-        <img class="w-auto h-auto" src={curImg} alt="Shoes" />
+        <img class="w-auto h-auto" on:mouseenter={mouseEnterF} on:mouseleave={mouseLeaveF} src={curImg} alt="Shoes" />
     </figure>
     <div class=" ml-2 mt-2 rounded-xl">
         <!-- only on this when New Overlay box is switched off -->
