@@ -8,39 +8,39 @@
     import SingleProduct from "$lib/all_Products/singleProduct.svelte";
 
     let products = [
-        {   name: 'Himadri-1', price: '3000', badge: null, 
+        {   id: 1, name: 'Himadri-1', price: '3000', badge: null, 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-1.jpg'  
         },
-        {   name: 'Brahma', price: '3550', badge: ['New'], 
+        {   id: 2, name: 'Brahma', price: '3550', badge: ['New'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Brahma-104402-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Brahma-104402-1.jpg'  
         },
-        {   name: 'Nodika', price: '3900', badge: ['New'], 
+        {   id: 3, name: 'Nodika', price: '3900', badge: ['New'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Nodika-103920-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Nodika-103920-1.jpg'  
         },
-        {   name: 'Tinti', price: '3200', badge: ['New'], 
+        {   id: 4, name: 'Tinti', price: '3200', badge: ['New'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Tinti-1-103742-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Tinti-1-103742-4.jpg'  
         },
-        {   name: 'Komolika-2', price: '3000', badge: ['Old'], 
+        {   id: 5, name: 'Komolika-2', price: '3000', badge: ['Old'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Komolika-2-103768-4.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Komolika-2-103768-1.jpg'  
         },
-        {   name: 'Pushpo Shakha-2', price: '2750', badge: ['Old','Sale'], 
+        {   id: 6, name: 'Pushpo Shakha-2', price: '2750', badge: ['Old','Sale'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Pushpo-Shakha-2-103745-4.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Pushpo-Shakha-2-103745-1.jpg'  
         },
-        {   name: 'Shikhondi', price: '3400', badge: ['Old','Sale'], 
+        {   id: 7, name: 'Shikhondi', price: '3400', badge: ['Old','Sale'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Shikhondi-103760-4.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Shikhondi-103760-1.jpg'  
         },
-        {   name: 'Boruna', price: '3400', badge: null, 
+        {   id: 8, name: 'Boruna', price: '3400', badge: null, 
             img: 'https://deshal.net/wp-content/uploads/2022/06/boruna.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Boruna-103755-1.jpg'  
         },
-        {   name: 'Orsha', price: '3300', badge: null, 
+        {   id: 9, name: 'Orsha', price: '3300', badge: null, 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Orsha-103700-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Orsha-103700-4.jpg'  
         },

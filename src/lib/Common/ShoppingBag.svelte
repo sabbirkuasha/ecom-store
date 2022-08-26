@@ -2,13 +2,16 @@
     import CartItemsStore from '../../routes/Store'
     import SingleCartItem from './SingleCartItem.svelte'
 
-    let CartItemsStores = null
-    CartItemsStore.subscribe((data)=>{
-        // console.log(data)
-        CartItemsStores = data
-        // console.log('Total Item')
-        // console.log(CartItemsStores.length)
-    })
+
+    // This is new method
+    $: CartItemsStores = $CartItemsStore
+
+    // this is old method
+    // let CartItemsStores = null
+    // CartItemsStore.subscribe((data)=>{
+    //     CartItemsStores = data
+    //     console.log(CartItemsStores.length)
+    // })
 
 
     let cartCount = 0

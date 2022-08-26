@@ -1,4 +1,5 @@
 <script>
+    import CartItemsStore from '../../routes/Store'
     export let name ="product"
     export let badge = []
     export let price = 542
@@ -13,6 +14,14 @@
     img=product.img
     img2=product.img2
 
+
+    function addToCart (){
+        console.log('add product from category page')
+        CartItemsStore.update((currentData)=>{
+            console.log(currentData)
+            return [product, ...currentData]
+        })
+    }
 
 </script>
 <div class="card w-auto shadow-md rounded-md">
@@ -39,5 +48,8 @@
         {/if}
         <h2 class="text-black font-bold">{name}</h2>
         <h2 class="text-black pb-1">Tk. {price}</h2>
+
+        <!-- will remove later -->
+        <button on:click={addToCart} class="btn btn-primary float-right"> Add to Cart</button>
     </div>
 </div>

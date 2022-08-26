@@ -19,8 +19,6 @@
     function addToCart (){
         console.log('add product to shopping bag')
         CartItemsStore.update((currentData)=>{
-            
-          
             return [newItem, ...currentData]
         })
     }
