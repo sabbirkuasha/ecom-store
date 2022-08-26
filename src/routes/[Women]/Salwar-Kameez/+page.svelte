@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Deshal | Ecommerce | Salwar-Kameez</title>
+    <link rel="icon" href="https://fav.farm/🏪" />
+</svelte:head>
+
 <script>
     import CategoryBar from "$lib/all_Products/CategoryBar.svelte";
     import SingleProduct from "$lib/all_Products/singleProduct.svelte";

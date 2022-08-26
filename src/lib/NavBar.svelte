@@ -1,5 +1,26 @@
 <script>
-  let navbarOpen = false
+  import CartItemsStore from '../routes/Store'
+  import ShoppingBag from "./Common/ShoppingBag.svelte";
+
+  let CartItemsStores = null
+  let _animS = false
+
+    CartItemsStore.subscribe((data)=>{
+        CartItemsStores = data 
+        
+        if (data.length>3){
+          _animS =true
+        }
+        
+        setTimeout(() => {
+        console.log("animation stop")
+        _animS = false
+        }, 4000);
+    })
+
+  
+  
+
 </script>
 
 <div class="navbar sticky top-0 shadow-xl bg-slate-900 z-50">
@@ -154,22 +175,20 @@
           </div>
           <div class="">
             <!-- Cart -->
-            <div class="dropdown dropdown-end rounded-3xl">
+            <div class="dropdown dropdown-end rounded-3xl ">
               <label for="" tabindex="0" class="btn btn-ghost btn-circle focus:outline">
                 <div class="indicator">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                  <span class="badge badge-secondary badge-sm indicator-item">12</span>
+                  <span class="badge badge-secondary badge-sm indicator-item"
+                        class:animate-ping="{_animS}">{(CartItemsStores.length)}</span>
                 </div>
               </label>
-              <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-slate-900 shadow">
-                <div class="card-body">
-                  <span class="font-bold text-lg">8 Items</span>
-                  <span class="text-info">Subtotal: $999</span>
-                  <div class="card-actions">
-                    <button class="btn btn-primary btn-block">View cart</button>
-                  </div>
-                </div>
+              
+              <div tabindex="0" class="mt-3 card rounded-md card-compact dropdown-content w-80 bg-slate-900 shadow-xl">
+                <!-- Shopping Bag Pop Up -->
+                <ShoppingBag/>
               </div>
+
             </div>
           </div>
           <div class="">
@@ -197,7 +216,7 @@
     </div>
 </div>
 
-<div class="w-full h-full hidden lg:hidden md:hidden bg-slate-900" x-data={navbarOpen}>
+<div class="w-full h-full hidden lg:hidden md:hidden bg-slate-900">
   <ul class="flex flex-col lg:space-x-0">
     <li class="">
         <a  class="flex py-3 px-3 rounded-md text-white border-red-700 md:w-screen
