@@ -23,7 +23,28 @@
         })
     }
 
+
+// will remove this part later
+let showAddtoCart = true
+function on_bind() {
+		console.log("hello");
+        showAddtoCart = !showAddtoCart
+	}
+
+	function on_key_down({key, ctrlKey, repeat}) {       
+		if (repeat) return;
+		
+		switch (key) {           
+			case "h":
+				if(ctrlKey) {
+					event.preventDefault();
+					on_bind();
+					break;
+				}
+		}
+	}
 </script>
+<svelte:window on:keydown={on_key_down}/>
 <div class="card w-auto shadow-md rounded-md">
     <figure class="relative bg-white">
         <!-- only on this when New badge is switched off -->
@@ -50,6 +71,11 @@
         <h2 class="text-black pb-1">Tk. {price}</h2>
 
         <!-- will remove later -->
-        <button on:click={addToCart} class="btn btn-primary float-right"> Add to Cart</button>
+        <button on:click={addToCart} 
+                class="btn btn-primary float-right hidden"
+                class:hidden="{showAddtoCart}"> 
+            Add to Cart
+        </button>
     </div>
 </div>
+
