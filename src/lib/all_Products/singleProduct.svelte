@@ -25,10 +25,10 @@
 
 
 // will remove this part later
-let showAddtoCart = true
+let hideAddtoCart = true
 function on_bind() {
 		console.log("hello");
-        showAddtoCart = !showAddtoCart
+        hideAddtoCart = !hideAddtoCart
 	}
 
 	function on_key_down({key, ctrlKey, repeat}) {       
@@ -44,7 +44,10 @@ function on_bind() {
 		}
 	}
 </script>
+<!-- will remove late -->
 <svelte:window on:keydown={on_key_down}/>
+
+
 <div class="card w-auto shadow-md rounded-md">
     <figure class="relative bg-white">
         <!-- only on this when New badge is switched off -->
@@ -60,20 +63,20 @@ function on_bind() {
             src={img2} alt={name}/>
 
     </figure>
-    <div class=" ml-2 mt-2 rounded-xl z-10 bg-white">
+    <div class="mt-2 z-10 bg-white relative">
         <!-- only on this when New Overlay box is switched off -->
         {#if badge}
             {#each badge as singleBadge}
                 <div class="mr-2 badge badge-outline uppercase badge-error text-xs">{singleBadge}</div>
             {/each} 
         {/if}
-        <h2 class="text-black font-bold">{name}</h2>
-        <h2 class="text-black pb-1">Tk. {price}</h2>
+        <h2 class="text-black font-bold ml-2">{name}</h2>
+        <h2 class="text-black pb-1 ml-2">Tk. {price}</h2>
 
         <!-- will remove later -->
         <button on:click={addToCart} 
-                class="btn btn-primary float-right hidden"
-                class:hidden="{showAddtoCart}"> 
+                class="btn btn-primary w-full float-right bottom-0 "
+                class:hidden="{hideAddtoCart}"> 
             Add to Cart
         </button>
     </div>

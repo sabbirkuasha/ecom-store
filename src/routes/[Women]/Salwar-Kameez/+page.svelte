@@ -8,7 +8,7 @@
     import SingleProduct from "$lib/all_Products/singleProduct.svelte";
 
     let products = [
-        {   id: 1, name: 'Himadri-1', price: '3000', badge: null, 
+        {   id: 1, name: 'Himadri-1', price: '3000', badge: ['Ekushey'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-1.jpg'  
         },
@@ -36,11 +36,11 @@
             img: 'https://deshal.net/wp-content/uploads/2022/06/Shikhondi-103760-4.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Shikhondi-103760-1.jpg'  
         },
-        {   id: 8, name: 'Boruna', price: '3400', badge: null, 
+        {   id: 8, name: 'Boruna', price: '3400', badge: ['New'],
             img: 'https://deshal.net/wp-content/uploads/2022/06/boruna.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Boruna-103755-1.jpg'  
         },
-        {   id: 9, name: 'Orsha', price: '3300', badge: null, 
+        {   id: 9, name: 'Orsha', price: '3300', badge: ['Eid'],
             img: 'https://deshal.net/wp-content/uploads/2022/06/Orsha-103700-3.jpg',  
             img2: 'https://deshal.net/wp-content/uploads/2022/06/Orsha-103700-4.jpg'  
         },
