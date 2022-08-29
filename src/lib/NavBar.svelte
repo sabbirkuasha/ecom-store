@@ -184,7 +184,8 @@
                 </div>
               </label>
               
-              <div tabindex="0" class="mt-3 card rounded-md card-compact dropdown-content w-80 bg-slate-900 shadow-xl">
+              <div  tabindex="0"
+                    class="mt-3 card rounded-md card-compact dropdown-content w-80 bg-slate-900 shadow-xl">
                 <!-- Shopping Bag Pop Up -->
                 <ShoppingBag/>
               </div>

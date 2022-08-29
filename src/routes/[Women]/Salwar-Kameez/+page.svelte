@@ -1,12 +1,16 @@
+
 <svelte:head>
 	<title>Deshal | Ecommerce | Salwar-Kameez</title>
     <link rel="icon" href="https://fav.farm/🏪" />
 </svelte:head>
 
 <script>
+    import {page} from '$app/stores'
     import CategoryBar from "$lib/all_Products/CategoryBar.svelte";
     import SingleProduct from "$lib/all_Products/singleProduct.svelte";
 
+    console.log("Page param is: ")
+    console.log($page.params.name)
     let products = [
         {   id: 1, name: 'Himadri-1', price: '3000', badge: ['Ekushey'], 
             img: 'https://deshal.net/wp-content/uploads/2022/06/Himadri-1-104482-3.jpg',  

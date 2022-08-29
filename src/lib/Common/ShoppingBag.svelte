@@ -1,4 +1,5 @@
 <script>
+    
     import CartItemsStore from '../../routes/Store'
     import SingleCartItem from './SingleCartItem.svelte'
 
