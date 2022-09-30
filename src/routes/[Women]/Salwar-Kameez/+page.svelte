@@ -5,6 +5,7 @@
 </svelte:head>
 
 <script>
+    import PageAnimate from '../../../lib/PageAnimate.svelte';
     import {page} from '$app/stores'
     import CategoryBar from "$lib/all_Products/CategoryBar.svelte";
     import SingleProduct from "$lib/all_Products/singleProduct.svelte";
@@ -50,7 +51,7 @@
         },
     ]
 </script>
-
+<PageAnimate>
 <CategoryBar categoryName = "SALWAR KAMEEJ"/>
 
 <!-- Breadcrumb | Sub-Categories | Filter  -->
@@ -122,3 +123,5 @@
         <SingleProduct {product}/>
     {/each}
 </div>
+
+</PageAnimate>

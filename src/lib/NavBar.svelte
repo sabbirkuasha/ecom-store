@@ -74,7 +74,7 @@
                         <li class="">
                           <a  class="flex w-full pl-4 p-2 rounded-md
                                   hover:bg-slate-800 focus:outline"
-                              href="/Women/Salwar-Kameez">
+                              href="/Women/Salwar-Kameez" sveltekit:prefetch>
                             Salwar Kameez
                           </a>
                         </li>
@@ -129,7 +129,7 @@
                 </li>
                 <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Kids</a></li>
                 <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Accessories</a></li>
-                <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Home Decor</a></li>
+                <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/shop" sveltekit:prefetch>Shop</a></li>
             </ul>
         </div>
     </div>
@@ -237,6 +237,6 @@
     </li>
     <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Kids</a></li>
     <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Accessories</a></li>
-    <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Home Decor</a></li>
+    <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/shop" sveltekit:prefetch>Shop</a></li>
   </ul>
 </div>
