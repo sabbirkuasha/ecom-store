@@ -11,8 +11,8 @@
 	// import Nav3 from '../lib/Nav3.svelte'
 
 	// Activate these 3 only when it requires
-	$: console.log("page info is: ")
-	$: console.log($page.routeId)
+	// $: console.log("page info is: ")
+	// $: console.log($page.routeId)
 	// $: console.log($page)
 
 </script>
