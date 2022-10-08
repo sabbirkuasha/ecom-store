@@ -128,7 +128,7 @@
                   </div>
                 </li>
                 <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Kids</a></li>
-                <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/">Accessories</a></li>
+                <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/newline">New Line</a></li>
                 <li><a class="flex py-3 px-3 text-white rounded-md hover:bg-slate-800" href="/shop" sveltekit:prefetch>Shop</a></li>
             </ul>
         </div>
