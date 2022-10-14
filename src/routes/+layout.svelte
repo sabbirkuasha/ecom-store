@@ -24,7 +24,7 @@
 <nav class="mt-5 text-center">
 	<a href="/" class="btn btn-primary">Home</a>
 	<a href="/login" class="btn btn-primary">Login</a>
-	<a href="/shop2" class="btn btn-primary">Shop2</a>
+	<a href="/shop2" sveltekit:prefetch class="btn btn-primary">Shop2</a>
 </nav>
 
 
