@@ -1,23 +1,11 @@
-export const load = ({ fetch, params}) => {
-    // console.log(params)
-  
-    const fetchProduct = async (id) => {
-      const res = await fetch(`http://localhost:1337/api/posts/${id}?populate[0]=FeaturedImage`)
-      const data = await res.json()
-      console.log('code is here')
-      return data.data.attributes
-    }
+export async function load ({fetch,params}){
+  let id = params.productId
+  const Res = await fetch(`http://localhost:1337/api/posts/${id}`)
+  const result = await Res.json()
+  const products = result.data
+  // console.log(products)
 
-
-    // const fetchProduct = async (id) => {
-    //   const res = await fetch(`https://dummyjson.com/products/${id}`)
-    //   const data = await res.json()
-    //   // console.log(data)
-    //   return data
-    // }
-  
-    return {
-      product: fetchProduct(params.productId)
-    }
-  
+  return{
+      post: products,
   }
+}

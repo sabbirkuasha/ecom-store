@@ -1,6 +1,7 @@
 <script>
     import SvelteMarkdown from 'svelte-markdown'
     export let data
+    console.log(data)
     let data1 = data.post
     
     let source = ''
